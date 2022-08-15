@@ -46,6 +46,11 @@ const modelSchema = new Schema({
         type: Date,
         required: true,
     },
+    fotoPerfil: {
+        type: String,
+        required: false,
+        default: "",
+    },
     agenda: {
         type: [agendaSchema],
         required: false,

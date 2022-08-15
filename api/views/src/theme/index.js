@@ -4,7 +4,7 @@ import { colorPalette, dp } from "./utils";
 const lightColors = {
     ...colorPalette({
         primary: ["#2640ff", "#ffffff", "#dfe0ff", "#000a63"],
-        whitePrimary: ["#ffffff", "#2640ff", "#000a63", "#dfe0ff"],
+        inversePrimary: ["#fffbff", "#2640ff", "#000a63", "#dfe0ff"],
         secondary: ["#5b5d72", "#ffffff", "#e0e0f9", "#3a0b00"],
         tertiary: ["#8f437c", "#ffffff", "#ffd7ef", "#3a0031"],
         error: ["#ba1a1a", "#ffffff", "#ffdad6", "#410002"],

@@ -16,8 +16,12 @@ const modelSchema = new Schema({
     },
     passowrd: {
         type: String,
-
         required: true,
+    },
+    fotoPerfil: {
+        type: String,
+        required: false,
+        default: "",
     },
     rol: {
         type: String,
