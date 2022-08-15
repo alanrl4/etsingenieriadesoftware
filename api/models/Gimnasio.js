@@ -23,9 +23,10 @@ const modelSchema = new Schema({
         default: Date.now,
     },
     diasAbierto: {
-        type: Date,
+        type: [Number],
         required: false,
-        default: Date.now,
+        enum: [0, 1, 2, 3, 4, 5, 6],
+        default: [],
     },
 });
 

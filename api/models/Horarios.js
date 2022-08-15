@@ -11,11 +11,13 @@ const modelSchema = new Schema({
         type: Schema.Types.ObjectId,
         required: false,
         ref: "usuarios",
+        default: null,
     },
     suplente: {
         type: Schema.Types.ObjectId,
         required: false,
         ref: "usuarios",
+        default: null,
     },
     hora: {
         type: Date,

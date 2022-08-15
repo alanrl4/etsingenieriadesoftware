@@ -1,5 +1,25 @@
 const { Schema, model } = require("mongoose");
 
+const agendaSchema = new Schema({
+    horario: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: "horarios",
+    },
+    entrenador: {
+        type: Schema.Types.ObjectId,
+        required: false,
+        ref: "usuarios",
+        default: null,
+    },
+    suplente: {
+        type: Schema.Types.ObjectId,
+        required: false,
+        ref: "usuarios",
+        default: null,
+    },
+});
+
 const modelName = "socios";
 const modelSchema = new Schema({
     nombre: {
@@ -27,7 +47,7 @@ const modelSchema = new Schema({
         required: true,
     },
     agenda: {
-        type: [Schema.Types.ObjectId],
+        type: [agendaSchema],
         required: false,
         default: [],
         ref: "horarios",
